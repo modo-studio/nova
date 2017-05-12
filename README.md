@@ -1,7 +1,7 @@
 nova
 ==================
 
-<p align="center">
+<p align="left">
     <a href="https://travis-ci.org/pepibumur/nova">
         <img src="https://travis-ci.org/pepibumur/nova.svg?branch=master">
     </a>
@@ -13,6 +13,19 @@ nova
     </a>
 </p>
 
+### Cartago file
+A `cartago.yml` defines the structure of your project, decoupling it from Xcode. In a Cartago file you can define things like:
+- Source files.
+- Type of product *(app, extension, framework...)*
+- Test files.
+- Dependencies with other cartago projects.
+
+[Nova](https://github.com/cartagoproject/nova) is a Swift library that provides tools for parsing and validating Cartago files.
+
+### Motivation
+Cartago files are used by [cartago](https://github.com/cartagoproject/cartago), a command line tools that offers:
+- Generation of Xcode projects.
+- Building without using Xcode.
 
 ### Contribute
 
