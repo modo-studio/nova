@@ -20,25 +20,35 @@ A `cartago.yml` defines the structure of your project for Apple platforms, decou
 - Test files.
 - Dependencies with other cartago projects.
 
-[Nova](https://github.com/cartagoproject/nova) is a Swift library that provides tools for **parsing** and **validating** Cartago files.
+[Nova](https://github.com/carambalabs/nova) is a Swift library that provides tools for **parsing** and **validating** Cartago files.
 
 ### Motivation
-Cartago files are used by [cartago](https://github.com/cartagoproject/cartago), a command line tools that offers:
+Cartago files are used by [cartago](https://github.com/carambalabs/cartago), a command line tools that offers:
 - Generation of Xcode projects.
 - Building without using Xcode.
 - ...
 
 ### Contribute
 
-1. Git clone the repository `git@github.com:cartagoproject/nova.git`.
+1. Git clone the repository `git@github.com:carambalabs/nova.git`.
 2. Open `nova.xcodeproj`
+
+### Example
+
+```yml
+// Cartagofile
+type: app
+source_files:
+    - Sources/*.swift
+
+````
 
 ### License
 
 ```
 MIT License
 
-Copyright (c) 2017 Pedro Piñera Buendía
+Copyright (c) 2017 Cartago
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
